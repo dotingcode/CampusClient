@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.campus.prime.ui.view.ObservableScrollView
+        android:id="@+id/ag_scroll"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <RelativeLayout
+            android:id="@+id/ag_title"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/ag_cover_frame"
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+                <ImageView android:id="@+id/ag_cover"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:clickable="true"/>
+                	<!-- android:background="@drawable/group_cover" -->
+            </FrameLayout>
+            <FrameLayout 
+                android:id="@+id/ag_label"
+				android:layout_below="@id/ag_cover_frame"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#ffffffff">
+	            <FrameLayout
+	                android:layout_width="match_parent"
+				    android:layout_height="80dp"
+				    android:background="@drawable/group_layout_bg"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/ag_avatar"
+			    android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:clickable="true"
+	            android:layout_marginLeft="30dp"
+                android:padding="5dp"
+                android:layout_marginTop="130dp"/>
+            <TextView
+                android:id="@+id/ag_name"
+                android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/ag_avatar"
+                android:layout_below="@id/ag_cover_frame"
+                android:hint="圈子名称"
+                android:textSize="20sp"
+                android:textColor="#e4e1dc"/>
+            <View android:layout_gravity="center_vertical" 
+                android:id="@+id/ag_name_edit" 
+                android:visibility="invisible"
+                android:layout_alignBottom="@id/ag_name"
+                android:layout_toRightOf="@id/ag_name"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/sel_edit_btn" 
+                android:clickable="true"
+                android:layout_width="20.0dip" 
+                android:layout_height="21.0dip"  />
+            <TextView 
+                android:id="@+id/ag_description"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginRight="35dp"
+                android:layout_below="@id/ag_name"
+                android:layout_toRightOf="@id/ag_avatar"
+                android:hint="圈子描述"
+                android:textSize="13sp"
+                android:textColor="#19aba2"/>
+            <View android:layout_gravity="center_vertical" 
+                android:id="@+id/ag_description_edit"
+                android:visibility="invisible" 
+                android:layout_below="@id/ag_name"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sel_edit_btn" 
+                android:clickable="true"
+                android:layout_width="20.0dip" 
+                android:layout_height="21.0dip"  />
+			<com.campus.prime.ui.indicator.TabPageIndicator
+		        android:id="@+id/ag_indicator"
+		        android:layout_below="@id/ag_label"
+		        android:layout_marginTop="-8dp"
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        />
+		    <android.support.v4.view.ViewPager
+		        android:id="@+id/ag_pager"
+		        android:layout_below="@id/ag_indicator"
+		        android:layout_width="match_parent"
+		        android:layout_height="470dp"/>
+	    </RelativeLayout>
+	</com.campus.prime.ui.view.ObservableScrollView>
+</RelativeLayout>
+    
+    
+    
+    
+    
+    
+    
+    

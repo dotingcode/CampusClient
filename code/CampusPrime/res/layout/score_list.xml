@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff2f1ed"
+    android:orientation="vertical" >
+    
+<!--  
+<TextView
+    android:id="@+id/fsl_semester"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dip"
+    android:paddingTop="12dip"
+    android:paddingBottom="8dip"
+    android:paddingLeft="4dip"
+    android:paddingRight="4dip"
+    android:hint="null"
+    android:textSize="18sp"
+    android:textStyle="normal"
+    android:textColor="#ff32bcb6"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1.2dip"
+    android:layout_marginLeft="8dip"
+    android:layout_marginRight="8dip"
+    android:background="#ff32bcb6"/>
+-->
+    
+<!-- ListView -->   
+<ListView
+    android:id="@+id/fsl_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dip"
+    android:layout_marginLeft="8dip"
+    android:layout_marginRight="8dip"
+    android:layout_marginBottom="8dip"
+    android:dividerHeight="10dip"
+    android:scrollbars="none"
+    android:divider="#fff2f1ed" />
+
+
+</LinearLayout>  
+

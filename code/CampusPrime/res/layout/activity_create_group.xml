@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout
+	    android:id="@+id/acg_photo_frame"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+		<RelativeLayout
+		    android:layout_width="90dip"
+		    android:layout_height="90dip"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_marginTop="24dip"
+		   	android:layout_marginBottom="24dip"
+		    >
+		<FrameLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    <ImageView 
+		        android:id="@+id/acg_avatar"
+		        android:layout_height="74dip"
+		        android:layout_width="74dip"
+		        android:layout_gravity="center"
+		        android:layout_centerHorizontal="true"/>
+		     <ImageView
+			    android:id="@+id/acg_change_avatar"
+			    android:layout_width="90dip"
+			    android:layout_height="90dip"
+			    android:layout_gravity="center"
+			    android:clickable="true"
+			    android:background="@drawable/sel_head_select"/>
+			   
+		</FrameLayout>
+			<com.campus.prime.ui.view.ThemeImageView
+		        android:id="@+id/acg_take_camera"
+		        android:layout_width="24dip"
+		        android:layout_height="24dip"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="2dip"
+		        android:layout_marginBottom="2dip"
+		        android:clickable="true"
+		        android:background="@drawable/take_camera"/>
+		</RelativeLayout>  
+	</LinearLayout>    
+	
+	
+		<EditText android:id="@+id/acg_name"
+		    android:layout_height="wrap_content"
+		    android:layout_width="match_parent"
+		    android:layout_marginTop="150dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_marginLeft="15dp"
+		    android:hint="名称"
+		    />
+	
+	    
+    
+</RelativeLayout>
+    
+    
+

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Theme.Campus" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <!-- 
+        <item name="android:progressBarStyle">@style/ProgressBar</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle</item>
+	    <item name="android:popupMenuStyle">@style/PopupMenu</item>
+	    <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+	    <item name="android:actionBarWidgetTheme">@style/Theme.stylingactionbar.widget</item>
+	    <item name="android:actionDropDownStyle">@style/DropDownNav</item>
+	    <item name="android:spinnerDropDownItemStyle">@style/DropDownItem</item>
+   	    <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+   	    <item name="android:actionModeBackground">@drawable/cab_background_top</item>
+   	    <item name="android:actionModeCloseButtonStyle">@style/CloseButton</item>
+   	    -->
+   	   <!--  <item name="android:actionModeCloseButtonStyle">@style/NoCloseButton</item> -->
+			
+	
+	</style>
+  
+    
+    
+    
+    
+	    
+
+        <!--  ActionBar -->
+    <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+       <!--  <item name="android:displayOptions">showCustom</item> -->
+        <item name="android:background">@color/sa_green</item>
+        <item name="android:backgroundStacked">@color/stacked_green</item>
+        <item name="android:backgroundSplit">@color/sa_green</item>
+    </style>
+    
+    <style name="ProgressBar" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_example</item>
+    </style>
+    
+    <style name="ActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
+    	<item name="android:background">@drawable/tab_indicator_ab_example</item>
+	</style>
+    
+    
+    <style name="PopupMenu" parent="@android:style/Widget.Holo.ListPopupWindow">
+   	 	<item name="android:popupBackground">@drawable/menu_dropdown_panel_example</item>  
+	</style>
+     
+	<style name="DropDownListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+	    <item name="android:listSelector">@drawable/selectable_background_example</item>
+	</style>
+	
+	<style name="Theme.stylingactionbar.widget" parent="@android:style/Theme.Holo">
+	    <item name="android:popupMenuStyle">@style/PopupMenu</item>
+	    <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+	</style>
+	
+	<style name="DropDownNav" parent="@android:style/Widget.Holo.Spinner">
+	    <item name="android:background">@drawable/spinner_background_ab_example</item>
+	    <item name="android:popupBackground">@drawable/menu_dropdown_panel_example</item>
+	    <item name="android:dropDownSelector">@drawable/selectable_background_example</item>
+	</style>
+	
+	<style name="DropDownItem" parent="@android:style/Widget.Holo.Light.DropDownItem.Spinner">
+	    <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
+	</style>
+	 
+	<style name="SpinnerItem" parent="@android:style/Widget.Holo.TextView.SpinnerItem">
+	    <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
+	</style>
+	<style name="CloseButton" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+	    <item name="android:background">@drawable/selectable_background_example</item>
+	</style>
+	<style name="NoCloseButton" parent="@android:style/Widget.ActionButton.CloseMode">
+  		<item name="android:visibility">gone</item>
+	</style>
+	
+	
+	
+    <!-- TabPageIndicator -->
+    <style name="StyledIndicators" parent="@android:style/Theme.Light">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/custom_tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textColor">#FF555555</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:divider">@drawable/custom_tab_indicator_divider</item>
+        <item name="android:dividerPadding">10dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+    </style>
+    
+    
+    <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+
+    <style name="Widget">
+    </style>
+
+    <style name="Widget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.IconPageIndicator" parent="Widget">
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+    
+     <style name="SampleTheme.Light" parent="Theme.Campus">
+        <item name="numberPickerStyle">@style/NPWidget.Holo.Light.NumberPicker</item>
+    </style>
+    
+    
+    
+    
+</resources>

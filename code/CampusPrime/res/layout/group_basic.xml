@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/gb_cover" 
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/group_cover">
+            </FrameLayout>
+            <FrameLayout 
+				android:layout_below="@id/gb_cover"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#ffffffff">
+	            <FrameLayout
+	                android:layout_width="match_parent"
+				    android:layout_height="80dp"
+				    android:background="@drawable/group_layout_bg"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/gb_avatar"
+			    android:layout_height="100dp"
+                android:layout_width="100dp"
+	            android:layout_marginLeft="30dp"
+                android:padding="5dp"
+                android:layout_marginTop="130dp"/>
+            <TextView
+                android:id="@+id/gb_name"
+                android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/gb_avatar"
+                android:layout_below="@id/gb_cover"
+                android:hint="圈子名称"
+                android:textSize="20sp"
+                android:textColor="#e4e1dc"/>
+            <TextView 
+                android:id="@+id/gb_description"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/gb_name"
+                android:layout_toRightOf="@id/gb_avatar"
+                android:hint="圈子描述"
+                android:textSize="13sp"
+                android:textColor="#19aba2"
+                android:text="nihao text text text text !!!"
+                android:layout_marginRight="5dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+

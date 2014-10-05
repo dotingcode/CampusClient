@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+<RelativeLayout
+	android:layout_marginTop="10dp"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+<LinearLayout 
+	android:id="@+id/amd_message_content"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	style="@style/card_outer" >
+<RelativeLayout 
+	style="@style/card_inner">
+<LinearLayout 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+<LinearLayout
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content" >
+	<ImageView 
+	    android:id="@+id/amd_avatar" 
+		style="@style/card_thumbnail"
+		android:background="@drawable/avatar_border"
+		android:layout_marginLeft="10.0dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="10.0dp"
+		android:layout_marginTop="10.0dp" />
+	<RelativeLayout 
+	    android:id="@+id/titleFrame" 
+		style="@style/card_title_frame" 
+		android:layout_gravity="center_vertical">
+	<TextView android:id="@+id/amd_username" 
+		style="@style/card_title"
+		android:textSize="14.0sp" 
+		android:textColor="#ff433d3d" 
+		android:ellipsize="end" />
+	<TextView 
+	    android:id="@+id/amd_created"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="13.0sp" 
+		android:textColor="#ffa3a1a3" 
+		android:ellipsize="end"
+		android:singleLine="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignBottom="@id/amd_username"
+		android:layout_marginRight="15dp" />	
+	</RelativeLayout>
+</LinearLayout>
+								
+<TextView 
+	android:id="@+id/amd_content"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="10.0dp"
+	android:layout_marginTop="10.0dp"
+	android:layout_marginRight="10.0dp"
+	android:lineSpacingMultiplier="1.1"
+	android:textSize="14.0sp"
+	android:textColor="#ff433d3d" /> 
+<ImageView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:layout_marginTop="5dp"
+	android:layout_marginLeft="10dp"
+	android:layout_marginBottom="10dp"
+	android:id="@+id/amd_media"
+	android:visibility="invisible"
+	/>
+
+</LinearLayout>
+</RelativeLayout>
+</LinearLayout>
+</RelativeLayout>
+ <ImageView
+     style="@style/card_shadow" 
+     android:layout_marginLeft="8dip"
+     android:layout_marginRight="8dip" />
+</LinearLayout>

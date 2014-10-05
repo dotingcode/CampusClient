@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="D:/WorkStation/GitHub/Campus/code/CampusPrime/libs/bcs-sdk-java_1.4.5.jar"/>
+	<classpathentry kind="lib" path="D:/WorkStation/GitHub/Campus/code/CampusPrime/libs/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/WorkStation/GitHub/Campus/code/CampusPrime/libs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/WorkStation/GitHub/Campus/code/CampusPrime/libs/flexjson-2.1.jar"/>
+	<classpathentry kind="lib" path="D:/WorkStation/GitHub/Campus/code/CampusPrime/libs/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/WorkStation/GitHub/Campus/code/CampusPrime/libs/httpclient-4.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/WorkStation/GitHub/Campus/code/CampusPrime/libs/httpcore-4.1.jar"/>
+	<classpathentry kind="lib" path="D:/WorkStation/GitHub/Campus/code/CampusPrime/libs/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="D:/WorkStation/GitHub/Campus/code/CampusPrime/libs/mas.jar"/>
+	<classpathentry kind="lib" path="D:/WorkStation/GitHub/Campus/code/CampusPrime/libs/pushservice-3.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/WorkStation/GitHub/Campus/code/CampusPrime/libs/weibo_sdk.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

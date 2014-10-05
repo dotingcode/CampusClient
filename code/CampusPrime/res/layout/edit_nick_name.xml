@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8.0dip"
+    android:layout_marginRight="8.0dip"
+    android:layout_marginTop="16.0dip"
+    android:layout_marginBottom="16.0dip"
+    android:orientation="vertical"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_shadow">
+   <EditText
+        android:id="@+id/fnne_nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:background="@color/white"
+        android:padding="16.0dip"
+        android:gravity="left"
+        android:textSize="15sp"
+        android:textColor="#ff4c4c4c"
+        android:hint="nickname"
+        android:lines="4"
+        android:maxLength="15"/>
+   <TextView
+       android:id="@+id/fnne_nick_name_num"
+       android:layout_width="30dip"
+       android:layout_height="30dip"
+       android:hint="15"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentBottom="true"/>
+   </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

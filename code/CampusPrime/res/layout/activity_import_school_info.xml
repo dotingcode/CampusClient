@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<!-- Login form -->
+
+	<LinearLayout
+	    android:id="@+id/aisi_frame"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/form_horizontal_padding"
+		android:paddingRight="@dimen/form_horizontal_padding"
+		android:paddingTop="@dimen/form_vertical_padding"
+		android:paddingBottom="@dimen/form_vertical_padding"
+		android:orientation="vertical" >
+		<com.campus.prime.ui.view.ThemeEditText
+		    android:id="@+id/school_num"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:hint="输入学号"
+		    android:inputType="textEmailAddress"
+		    android:maxLines="1"
+		    android:singleLine="true"
+		    style="@style/TextField" />
+		<com.campus.prime.ui.view.ThemeEditText
+		    android:id="@+id/school_password"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:hint="输入密码"
+		    android:inputType="textPassword"
+		    android:maxLines="1"
+		    android:singleLine="true" 
+		    style="@style/TextField"/> 
+	</LinearLayout>     
+	<TextView
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_below="@id/aisi_frame"
+	    android:layout_marginLeft="50dp"
+	    android:layout_marginRight="50dp"
+	    android:layout_marginTop="10dp"
+	    android:text="请输入学号和密码，导入教务系统信息"/>
+</RelativeLayout>

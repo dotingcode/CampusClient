@@ -1,0 +1,111 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="250dp" 
+     >
+
+<LinearLayout
+    android:id="@+id/nd_npicker_layout" 
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:orientation="horizontal"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:layout_marginTop="5dp"
+   >
+       
+    <net.simonvt.numberpicker.NumberPicker
+        android:id="@+id/npicker_single_double"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <net.simonvt.numberpicker.NumberPicker
+        android:id="@+id/npicker_day_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5dp"/>
+    <net.simonvt.numberpicker.NumberPicker
+        android:id="@+id/npicker_class_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5dp"/>
+    <net.simonvt.numberpicker.NumberPicker
+        android:id="@+id/npicker_class_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5dp"/>
+   
+</LinearLayout>
+    
+ 
+       <View
+           android:id="@+id/nd_divide_line"
+           android:layout_width="fill_parent"
+           android:layout_height="1dip"
+           android:background="#E6E6FA"
+           android:layout_marginLeft="5dp"  
+           android:layout_marginRight="5dp"
+           android:layout_below="@id/nd_npicker_layout"
+           />
+<!--  
+<RelativeLayout
+    android:id="@+id/button_below_npicker"
+   android:layout_width="match_parent"
+   android:layout_height="40dp"
+   android:layout_alignParentBottom="true"
+  
+   android:layout_below="@id/divide_line">
+    <LinearLayout
+        android:id="@+id/btn_left"
+        android:layout_width="150dp"  
+        android:layout_height="wrap_content"
+        android:gravity="left" >
+     -->   
+   
+    <TextView
+        
+        android:id="@+id/nd_btn_ok"
+        android:layout_width="150dp"
+        android:layout_height="40dp"  
+        android:layout_below="@id/nd_divide_line"
+        android:gravity="center"
+        android:text="OK" 
+        android:textSize="18sp"
+        android:clickable="true"
+        android:focusable="true"/>
+   
+    <View
+       android:id="@+id/nd_divide_line2"
+       android:layout_width="1dip"
+       android:layout_height="40dp"
+       android:background="#E6E6FA"
+       android:layout_below="@id/nd_divide_line"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@id/nd_btn_ok"
+       android:layout_marginTop="2dp"
+       
+      />
+    <!--  
+     <LinearLayout
+        android:id="@+id/btn_right"
+        android:layout_width="150dp"  
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_toRightOf="@+id/divide_line2" >
+      -->
+     <TextView
+        android:id="@+id/nd_btn_cancel"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_below="@id/nd_divide_line"
+        android:layout_toRightOf="@+id/nd_divide_line2"
+        android:text="Cancel" 
+        android:clickable="true"
+        android:focusable="true"/>
+    
+
+     
+     
+ </RelativeLayout>     
+     

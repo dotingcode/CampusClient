@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterActivity" 
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<!-- Login form -->
+
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingLeft="30dp"
+	android:paddingRight="30dp"
+	android:paddingTop="40dp"
+	android:paddingBottom="@dimen/form_vertical_padding"
+	android:orientation="vertical" >
+	<com.campus.prime.ui.view.ThemeEditText
+	    android:id="@+id/ar_email"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="textEmailAddress"
+	    android:hint="输入邮箱"
+	    android:maxLines="1"
+	    android:singleLine="true"
+	    style="@style/TextField" />
+	<com.campus.prime.ui.view.ThemeEditText
+	    android:id="@+id/ar_password"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="设置密码"
+	    android:imeActionId="@+id/login"
+	    android:imeActionLabel="@string/action_sign_in_short"
+	    android:imeOptions="actionUnspecified"
+	    android:inputType="textPassword"
+	    android:maxLines="1"
+	    android:singleLine="true" 
+	    style="@style/TextField"/> 
+</LinearLayout>     
+</RelativeLayout>
+

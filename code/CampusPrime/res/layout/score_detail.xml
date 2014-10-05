@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff2f1ed" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8.0dip"
+    android:layout_marginRight="8.0dip"
+    android:layout_marginTop="12dip"
+    android:background="@drawable/bg_shadow"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/fsd_course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dip"
+        android:paddingBottom="8dip"
+        android:paddingRight="12dip"
+        android:paddingLeft="12dip"
+        android:hint="null"
+        android:textSize="20sp"
+      	android:textColor="#ff4c4c4c"
+        android:gravity="center" />
+        
+</LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dip"
+    android:background="#ff19aba2"/>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="16dip"
+    android:paddingBottom="6dip"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    >
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="课程类型"
+        android:textSize="15sp"
+        android:textColor="#ff4c4c4c"       
+        />
+    <TextView
+        android:id="@+id/fsd_course_type"
+        android:layout_width="0dip"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="null"
+        android:textSize="15sp"
+        android:textColor="#ff808080"/>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="6dip"
+    android:paddingBottom="6dip"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    >
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="任课教师"
+        android:textSize="15sp"
+        android:textColor="#ff4c4c4c"       
+        />
+    <TextView
+        android:id="@+id/fsd_course_teacther"
+        android:layout_width="0dip"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="null"
+        android:textSize="15sp"
+        android:textColor="#ff808080"/>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="6dip"
+    android:paddingBottom="6dip"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    >
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="所设学分"
+        android:textSize="15sp"
+        android:textColor="#ff4c4c4c"       
+        />
+    <TextView
+        android:id="@+id/fsd_course_credit"
+        android:layout_width="0dip"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="null"
+        android:textSize="15sp"
+        android:textColor="#ff808080"/>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="6dip"
+    android:paddingBottom="6dip"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    >
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="期末成绩"
+        android:textSize="15sp"
+        android:textColor="#ff4c4c4c"       
+        />
+    <TextView
+        android:id="@+id/fsd_first_score"
+        android:layout_width="0dip"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="null"
+        android:textSize="15sp"
+        android:textColor="#ff808080"/>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="6dip"
+    android:paddingBottom="6dip"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    >
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="所得绩点"
+        android:textSize="15sp"
+        android:textColor="#ff4c4c4c"       
+        />
+    <TextView
+        android:id="@+id/fsd_course_gpa"
+        android:layout_width="0dip"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="null"
+        android:textSize="15sp"
+        android:textColor="#ff808080"/>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="6dip"
+    android:paddingBottom="6dip"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    >
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="补考成绩"
+        android:textSize="15sp"
+        android:textColor="#ff4c4c4c"       
+        />
+    <TextView
+        android:id="@+id/fsd_second_score"
+        android:layout_width="0dip"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="null"
+        android:textSize="15sp"
+        android:textColor="#ff808080"/>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="12dip"
+    android:paddingRight="8dip"
+    android:paddingBottom="8dip"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    >
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1.2"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1.2"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/fsd_course_ispass"
+        android:layout_width="0dip"
+        android:layout_weight="0.6"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dip"
+        android:hint="null"
+        android:textSize="18sp"
+        android:textColor="#ffffffff"       
+        />
+</LinearLayout>
+</LinearLayout>    
+</LinearLayout>
+</LinearLayout>

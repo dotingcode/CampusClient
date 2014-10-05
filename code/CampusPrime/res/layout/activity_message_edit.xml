@@ -1,0 +1,76 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+	    android:layout_marginLeft="8.0dip"
+	    android:layout_marginRight="8.0dip"
+	    android:layout_marginTop="16.0dip"
+	    android:layout_marginBottom="64.0dip"
+        android:background="@drawable/bg_shadow"> 
+        
+		<EditText android:id="@+id/ame_edit_message"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@color/white"
+			android:padding="16dp"
+			android:gravity="left"
+			android:textSize="17dp"
+			android:textColor="#ff4c4c4c"
+			android:textColorHint="#ffa5a5a5" 
+			android:hint="说点儿什么吧。。。"/>
+		<ImageView android:id="@+id/ame_media"
+		    android:layout_height="60dp"
+		    android:layout_width="60dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="16dp"
+		    android:layout_marginBottom="8dp"/>
+		<TextView android:id="@+id/ame_count"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginBottom="8dp"
+		    android:layout_marginRight="16dp"/>
+	</RelativeLayout>
+    
+    <RelativeLayout android:id="@+id/ame_bottom_bar" 
+        android:background="#ff1f1f1f" 
+        android:layout_width="fill_parent" 
+        android:layout_height="48dp" 
+        android:layout_alignParentBottom="true">
+		<LinearLayout android:id="@+id/ame_btn_media" 
+		    android:layout_alignParentRight="true"
+		    android:background="@drawable/sel_detail_tab" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="fill_parent"
+		    android:gravity="center"
+		    android:orientation="horizontal" 
+		    android:clickable="true"
+		    android:onClick="mediaClicked">"
+            <ImageView android:id="@+id/ame_btn_media_icon"
+                android:paddingLeft="5dp"
+                android:layout_width="22dp" 
+                android:layout_height="22dp" 
+                android:src="@drawable/btn_pic_normal" />
+            <TextView android:textColor="#ff999999"
+                android:paddingRight="5dp"
+                android:textSize="20sp" 
+                android:gravity="center" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="6.0dip" 
+                android:text="图片" />
+		</LinearLayout>
+		<Spinner android:id="@+id/ame_selector"
+		    android:layout_height="match_parent"
+		    android:layout_width="wrap_content"
+		    android:layout_alignParentLeft="true"/>
+	</RelativeLayout>
+</RelativeLayout>
+
+

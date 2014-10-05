@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/bg_shadow">
+        
+        <EditText 
+            android:id="@+id/aac_course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#FFFFFF" 
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_course_name2"
+            android:singleLine="true" 
+            android:maxLength="25" 
+            android:layout_centerVertical="true" 
+            android:textColor="#808080"
+            android:hint="课程名称"
+            android:imeOptions="actionNext"
+            />
+        <View
+           android:id="@+id/aac_divide_line"
+           android:layout_width="fill_parent"
+           android:layout_height="1dip"
+           android:background="#E6E6FA"
+           android:layout_marginLeft="5dp" 
+           android:layout_marginRight="5dp"
+           android:layout_marginBottom="10dip"
+           android:layout_below="@id/aac_course_name"/>
+        
+        <EditText 
+            android:id="@+id/aac_course_teacher"
+            android:layout_below="@id/aac_divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" 
+            android:textColor="#808080"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_course_teacher2"
+            android:drawablePadding="10dp"
+            android:hint="教师姓名"
+            android:singleLine="true" 
+      android:maxLength="25" 
+      android:layout_centerVertical="true" 
+      android:imeOptions="actionNext"/>
+        
+        <View
+           android:id="@+id/aac_divide_line2"
+           android:layout_width="fill_parent"
+           android:layout_height="1dip"
+           android:background="#E6E6FA"
+           android:layout_marginLeft="5dp" 
+           android:layout_marginRight="5dp"
+           android:layout_below="@id/aac_course_teacher"
+           />
+    <RelativeLayout 
+        android:id="@+id/aac_course_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        
+        >
+    <LinearLayout
+             android:id="@+id/aac_weekstart_layout"
+             android:layout_width="165dp" 
+             android:layout_height="wrap_content" 
+             android:orientation="horizontal"
+             android:layout_weight="1"
+             android:gravity="left"
+              > 
+        <TextView 
+            android:id="@+id/aac_weekstart_textview"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="起始周" 
+            android:textColor="#808080"
+            android:textSize="14sp" 
+            android:paddingLeft="20dp" 
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+        <EditText 
+            android:id="@+id/aac_add_weekstart"
+            android:singleLine="true" 
+            android:maxLength="8" 
+            android:layout_centerVertical="true" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" 
+            android:textColor="#808080"
+            android:padding="10dp"
+            android:hint="1"
+            />
+        
+      </LinearLayout> 
+      
+      <View
+       android:id="@+id/aac_divide_line3"
+       android:layout_width="1dip"
+       android:layout_height="40dp"
+       android:background="#E6E6FA"
+       
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@id/aac_weekstart_layout"
+       android:layout_weight="1"
+      />
+      
+      <LinearLayout
+             android:id="@+id/aac_weekend_layout"
+              android:layout_width="165dp" 
+             android:layout_height="wrap_content" 
+             android:orientation="horizontal"
+             android:layout_toRightOf="@id/aac_divide_line3"
+             android:background="#FFFFFF"
+             android:gravity="right"
+             
+             android:layout_weight="1" > 
+        <TextView 
+            android:id="@+id/aac_weekend_textview"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="结束周" 
+            android:textColor="#808080"
+            android:textSize="14sp" 
+            android:paddingLeft="20dp" 
+            android:gravity="center"
+             android:layout_centerVertical="true"
+            />
+        <EditText 
+            android:id="@+id/aac_add_weekend"
+            android:singleLine="true" 
+            android:maxLength="8" 
+            android:layout_centerVertical="true" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" 
+            android:padding="10dp"
+            android:textColor="#808080"
+            android:hint="17"
+            />
+        
+      </LinearLayout> 
+          
+      </RelativeLayout> 
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/aac_course_time_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/bg_shadow">
+        
+        <TextView
+            android:id="@+id/aac_add_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#FFFFFF" 
+            android:drawableLeft="@drawable/ic_course_time2"
+            android:drawablePadding="10dp"
+            android:text="上课时间"
+            android:textColor="#808080"
+            android:textSize="18sp"
+            android:selectAllOnFocus="true"
+            android:clickable="true"
+            android:focusable="true" 
+            android:focusableInTouchMode="true" 
+            />
+        <View
+           android:id="@+id/aac_divide_line4"
+           android:layout_width="fill_parent"
+           android:layout_height="1dip"
+           android:background="#E6E6FA"
+           android:layout_marginLeft="5dp" 
+           android:layout_marginRight="5dp"
+           />
+        
+         <EditText 
+            android:id="@+id/aac_add_classroom"
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" 
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_course_classroom2"
+            android:drawablePadding="10dp"
+            android:hint="上课地点"
+            android:textColor="#808080"
+            android:singleLine="true" 
+            android:maxLength="20" 
+           android:imeOptions="actionNext" 
+           android:layout_centerVertical="true"
+            />
+      
+</LinearLayout> 
+
+     <LinearLayout
+        android:id="@+id/aac_course_time_layout2" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/bg_shadow"
+        android:visibility="invisible"
+        android:longClickable="true"
+      
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        >
+        
+        <TextView
+            android:id="@+id/aac_add_time2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#FFFFFF" 
+            android:drawableLeft="@drawable/ic_course_time2"
+            android:drawablePadding="10dp"
+            android:text="上课时间"
+            android:textColor="#808080"
+            android:textSize="18sp"
+            android:selectAllOnFocus="true"
+            android:clickable="true" 
+            android:focusableInTouchMode="true" 
+            />
+        <View
+           android:id="@+id/aac_divide_line5"
+           android:layout_width="fill_parent"
+           android:layout_height="1dip"
+           android:background="#E6E6FA"
+           android:layout_marginLeft="5dp" 
+           android:layout_marginRight="5dp"
+           />
+        
+         <EditText 
+            android:id="@+id/aac_add_classroom2" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" 
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_course_classroom2"
+            android:drawablePadding="10dp"
+            android:hint="上课地点"
+            android:singleLine="true" 
+            android:maxLength="20" 
+            android:imeOptions="actionNext" 
+            android:layout_centerVertical="true"
+            />
+      
+</LinearLayout> 
+
+    <LinearLayout
+        android:id="@+id/aac_course_time_layout3" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_horizontal"
+        android:longClickable="true"
+        android:orientation="vertical"
+        android:background="@drawable/bg_shadow"
+        android:visibility="invisible"
+        android:clickable="true"
+   
+        >
+        
+        <TextView
+            android:id="@+id/aac_add_time3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#FFFFFF" 
+            android:drawableLeft="@drawable/ic_course_time2"
+            android:drawablePadding="10dp"
+            android:text="上课时间"
+            android:selectAllOnFocus="true"
+            android:textColor="#808080"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:focusable="true" 
+            android:focusableInTouchMode="true" 
+            />
+        <View
+           android:id="@+id/aac_divide_line6"
+           android:layout_width="fill_parent"
+           android:layout_height="1dip"
+           android:background="#E6E6FA"
+           android:layout_marginLeft="5dp" 
+           android:layout_marginRight="5dp"
+           
+           />
+        
+         <EditText 
+            android:id="@+id/aac_add_classroom3"
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" 
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_course_classroom2"
+            android:drawablePadding="10dp"
+            android:hint="上课地点"
+            android:singleLine="true" 
+            android:maxLength="20" 
+            android:imeOptions="actionNext" 
+            android:layout_centerVertical="true"
+            />
+      
+</LinearLayout> 
+    
+     
+     
+      
+
+</LinearLayout>

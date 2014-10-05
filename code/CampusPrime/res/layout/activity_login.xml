@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+
+	>
+	<ScrollView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    
+	    >
+
+	    
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    >
+		    
+		<LinearLayout 
+	       android:layout_width="match_parent"
+	       android:layout_height="300dp"
+	       android:orientation="vertical"
+	       android:gravity="center"
+	       android:background="#19aba2">
+	       <ImageView
+				android:layout_width="160dp"
+				android:layout_height="160dp"
+				android:background="@drawable/icon"/>
+	</LinearLayout>
+	
+		
+		     <LinearLayout
+		         android:layout_width="match_parent"
+		         android:layout_height="175dip"	         
+		         android:orientation="vertical"
+			    android:paddingBottom="@dimen/form_vertical_padding"
+			    android:paddingLeft="@dimen/form_horizontal_padding"
+			    android:paddingRight="@dimen/form_horizontal_padding"
+			    android:paddingTop="@dimen/form_vertical_padding"
+		         >
+				<LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="center"
+				    android:paddingLeft="10.0dip"
+				    android:paddingRight="10.0dip"
+				    
+				    >
+				    <com.campus.prime.ui.view.ThemeEditText
+				    	android:id="@+id/email"
+				  	 	android:layout_width="match_parent"
+				   		android:layout_height="wrap_content"
+				   		android:hint="请输入邮箱"
+				   		android:singleLine="true"
+				   		android:inputType="textEmailAddress"
+				    	style="@style/TextField"/>
+			     </LinearLayout>
+			     
+			     <LinearLayout
+			         android:layout_width="match_parent"
+			         android:layout_height="wrap_content"
+			         android:gravity="center"
+			         android:paddingLeft="10.0dip"
+			         android:paddingRight="10.0dip"
+			         >
+				     <com.campus.prime.ui.view.ThemeEditText
+				         android:id="@+id/password"
+				         android:layout_width="match_parent"
+				         android:layout_height="wrap_content"
+				         android:inputType="textPassword"
+				         android:singleLine="true"
+				         android:hint="请输入密码"
+				         style="@style/TextField"/> 
+			     </LinearLayout>
+			     
+		   		<LinearLayout 
+					 android:orientation="vertical" 
+					 android:layout_width="match_parent" 
+					 android:layout_height="wrap_content"
+					 android:paddingLeft="12dip"
+					 android:paddingRight="12dip">
+		             <Button 
+		                 android:id="@+id/sign_in_button"
+		                 android:layout_marginTop="4dip"
+		                 android:textSize="16.0sp" 
+					 	 android:gravity="center" 
+						 android:layout_width="match_parent" 
+						 android:layout_height="35.0dip" 
+						 android:text="登     录" 
+						 android:onClick="onClick"
+						 android:background="@drawable/sel_login_button" 
+						 />
+	       		 </LinearLayout>
+		      	            
+	   	</LinearLayout>
+	    
+	     
+	    <LinearLayout 
+			android:gravity="center_horizontal" 
+			android:orientation="horizontal" 
+			android:layout_width="match_parent" 
+			android:layout_height="120dip"
+			android:visibility="gone"
+			>
+		    <TextView 
+		        android:id="@+id/forget_password"
+				android:textSize="16.0sp"  
+				android:layout_gravity="bottom" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="找回密码" />
+		    <TextView 
+		        android:id="@+id/sign_up_button"
+				android:textSize="16.0sp"
+				android:layout_gravity="bottom" 
+				android:clickable="true" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:layout_marginLeft="5dip"
+				android:text="注册账号" 
+				android:onClick="onClick" />
+   		 </LinearLayout>
+	             
+	            
+		</LinearLayout>
+			        
+	</ScrollView>
+	 
+</LinearLayout>
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip">
+    <com.campus.prime.ui.view.DialogHeader
+        android:id="@+id/dia_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="DialogHeader"
+        android:textSize="20sp"
+        style="@style/DialogHeader"
+        />
+    <ListView 
+        android:layout_marginTop="4.0dip"
+        android:layout_marginBottom="4.0dip"
+        android:id="@+id/dia_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0.7dip"
+        android:divider="@color/colore5"
+        >        
+    </ListView>
+
+</LinearLayout>
+

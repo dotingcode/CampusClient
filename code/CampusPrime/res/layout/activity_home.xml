@@ -1,0 +1,206 @@
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:campus="http://schemas.android.com/apk/res/com.campus.prime"
+    android:id="@+id/drawer_layout"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+<FrameLayout
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+    <!-- android:layout_gravity="start" tells DrawerLayout to treat
+         this as a sliding drawer on the left side for left-to-right
+         languages and on the right side for right-to-left languages.
+         The drawer is given a fixed width in dip and extends the full height of
+         the container. A solid background is used for contrast
+         with the content view. -->
+         
+         
+	<!-- Signal white f4f4f4 Grey white e7ebda Papyrus white d7d7d7 -->
+<LinearLayout 
+	android:id="@+id/left_drawer"
+    android:layout_width="295dip"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:scrollbars="none"	
+    android:choiceMode="singleChoice"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:background="#ff363636" >
+	
+<RelativeLayout 
+    android:orientation="vertical" 
+    android:id="@+id/drawer_title" 
+    android:background="#ff222222" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" >   
+<RelativeLayout 
+    android:id="@+id/drawer_menu_login" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" >
+    
+    <RelativeLayout 
+        android:id="@+id/drawer_user_info" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:paddingLeft="15.0dp" 
+        android:paddingRight="8.0dp" 
+        android:clickable="true" 
+        android:onClick="tabClicked" 
+        android:background="@drawable/sel_drawer_tab" >
+        <ImageView 
+            android:id="@+id/drawer_user_avatar" 
+            android:layout_marginLeft="5.0dip" 
+            android:layout_marginTop="10.0dip" 
+            android:layout_marginRight="5.0dip" 
+            android:layout_marginBottom="5.0dip" 
+            android:layout_width="60.0dp" 
+            android:layout_height="60.0dp" />
+        <TextView  
+            android:textColor="#ffffffff" 
+            android:id="@+id/drawer_username" 
+            android:layout_marginLeft="10.0dip" 
+            android:layout_toRightOf="@id/drawer_user_avatar" 
+            android:layout_centerVertical="true" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:textSize="14sp" />
+	</RelativeLayout>
+	<ImageView android:id="@+id/img_divider_usrinfo" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:src="#ff1c1c1c" android:scaleType="fitXY" android:layout_below="@id/drawer_user_info" />
+    <LinearLayout 
+        android:orientation="horizontal" 
+        android:id="@+id/drawer_my_topic" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/img_divider_usrinfo" >
+        <RelativeLayout 
+            android:id="@+id/drawer_tab_my_group" 
+            android:background="@drawable/sel_drawer_tab" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0" 
+            android:paddingLeft="15.0dp" 
+            android:paddingRight="8.0dp" 
+            android:clickable="true" 
+            android:onClick="tabClicked" >
+            <TextView 
+                android:textSize="16.0sp" 
+                android:textColor="#ffffffff" 
+                android:id="@+id/drawer_my_group_count" 
+                android:focusable="false" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_alignParentTop="true" 
+                android:layout_centerHorizontal="true" />
+            <TextView 
+                android:textSize="14.0sp" 
+                android:textColor="#ff656565" 
+                android:id="@+id/drawer_my_group" 
+                android:focusable="false" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="创建" 
+                android:layout_below="@id/drawer_my_group_count" 
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>                        
+        <ImageView android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="#ff1c1c1c" android:scaleType="fitXY" />
+        <RelativeLayout 
+            android:id="@+id/drawer_tab_my_tweet" 
+            android:background="@drawable/sel_drawer_tab" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0" 
+            android:paddingLeft="15.0dp" 
+            android:paddingRight="8.0dp" 
+            android:clickable="true" 
+            android:onClick="tabClicked" >
+            <TextView 
+                android:textSize="16.0sp" 
+                android:textColor="#ffffffff" 
+                android:id="@+id/drawer_my_tweet_count" 
+                android:focusable="false" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_alignParentTop="true" 
+                android:layout_centerHorizontal="true" />
+            <TextView 
+                android:textSize="14.0sp" 
+                android:textColor="#ff656565" 
+                android:id="@+id/drawer_my_tweet" 
+                android:focusable="false" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="动态" 
+                android:layout_below="@id/drawer_my_tweet_count" 
+                android:layout_centerHorizontal="true" />
+         </RelativeLayout>
+         <ImageView android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="#ff1c1c1c" android:scaleType="fitXY" />
+             <RelativeLayout 
+                 android:id="@+id/drawer_tab_my_circle" 
+                 android:background="@drawable/sel_drawer_tab" 
+                 android:layout_width="0.0dip" 
+                 android:layout_height="wrap_content" 
+                 android:layout_weight="1.0" 
+                 android:paddingLeft="15.0dp" 
+                 android:paddingRight="8.0dp" 
+                 android:clickable="true" 
+                 android:onClick="tabClicked" >
+                 <TextView 
+                     android:textSize="16.0sp" 
+                     android:textColor="#ffffffff" 
+                     android:id="@+id/drawer_my_circle_count" 
+                     android:focusable="false" 
+                     android:layout_width="wrap_content" 
+                     android:layout_height="wrap_content" 
+                     android:layout_alignParentTop="true" 
+                     android:layout_centerHorizontal="true" />
+                 <TextView 
+                     android:textSize="14.0sp" 
+                     android:textColor="#ff656565" 
+                     android:id="@+id/drawer_my_circle" 
+                     android:focusable="false" 
+                     android:layout_width="wrap_content" 
+                     android:layout_height="wrap_content" 
+                     android:text="社团" 
+                     android:layout_below="@id/drawer_my_circle_count" 
+                     android:layout_centerHorizontal="true" />
+             	</RelativeLayout>             	
+           </LinearLayout>
+	  </RelativeLayout>
+</RelativeLayout>
+<!-- ExpandableListView -->
+
+             
+<ExpandableListView
+	android:id="@+id/drawer_menu_groups"
+	android:layout_below="@id/drawer_title"
+	android:scrollbars="none"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:groupIndicator="@null" />
+<ImageView android:id="@+id/img_divider_bottom" android:layout_width="fill_parent" android:layout_height="1.2dip" android:src="@drawable/divider_line" android:scaleType="fitXY"  />	
+
+</LinearLayout>
+</android.support.v4.widget.DrawerLayout>

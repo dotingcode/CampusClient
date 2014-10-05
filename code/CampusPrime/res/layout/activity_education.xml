@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+
+	>
+	<ScrollView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    
+	    >
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    android:paddingBottom="@dimen/form_vertical_padding"
+		    android:paddingLeft="@dimen/form_horizontal_padding"
+		    android:paddingRight="@dimen/form_horizontal_padding"
+		    android:paddingTop="@dimen/form_vertical_padding"
+		    >
+			<RelativeLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="120dip"	   
+			    android:layout_marginTop="30dip"
+			    >
+
+				<ImageView
+				    android:id="@+id/icon"
+				    android:layout_width="80dip"
+				    android:layout_height="80dip"
+				    android:layout_centerHorizontal="true"
+				    android:layout_centerVertical="true"
+				    android:background="@drawable/ic_avatar"
+				    android:focusable="true"
+				    android:focusableInTouchMode="true" />
+
+			</RelativeLayout>
+			
+	     
+	
+		     <LinearLayout
+		         android:layout_width="match_parent"
+		         android:layout_height="140dip"	         
+		         android:orientation="vertical"
+		         android:layout_gravity="center_vertical"
+		         >
+				<LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="center"
+				    android:paddingLeft="10.0dip"
+				    android:paddingRight="10.0dip"
+				    
+				    >
+				    <com.campus.prime.ui.view.ThemeTextView
+				    	android:id="@+id/school"
+				  	 	android:layout_width="match_parent"
+				   		android:layout_height="wrap_content"
+				   		android:hint="请选择学校"
+				   		android:clickable="true"
+				    	style="@style/LabelText"/>
+			     </LinearLayout>
+			     
+			     <LinearLayout
+			         android:layout_width="match_parent"
+			         android:layout_height="wrap_content"
+			         android:gravity="center"
+			         android:paddingLeft="10.0dip"
+			         android:paddingRight="10.0dip"
+			         >
+				     <com.campus.prime.ui.view.ThemeTextView
+				         android:id="@+id/academy"
+				         android:layout_width="match_parent"
+				         android:layout_height="wrap_content"
+				         android:hint="请选择学院"
+				         android:clickable="true"
+				         style="@style/LabelText"/> 
+			     </LinearLayout>
+			     
+		   		<LinearLayout
+			         android:layout_width="match_parent"
+			         android:layout_height="wrap_content"
+			         android:gravity="center"
+			         android:paddingLeft="10.0dip"
+			         android:paddingRight="10.0dip"
+			         >
+				     <com.campus.prime.ui.view.ThemeTextView
+				         android:id="@+id/grade"
+				         android:layout_width="match_parent"
+				         android:layout_height="wrap_content"
+				         android:hint="请选择年级"
+				         android:clickable="true"
+				         style="@style/LabelText"/> 
+			     </LinearLayout>
+		      	            
+	   	</LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="20.0dip"
+	        android:paddingRight="20.0dip"
+	        >
+		   	<TextView
+		   	    android:layout_width="wrap_content"
+		   	    android:layout_height="wrap_content"
+		   	    android:hint="完善入学信息，将导入您的教务信息，方便您更好的安排自己的大学生活"
+	      		android:textSize="12sp"></TextView>
+	        
+	    </LinearLayout>
+	     
+	    
+
+	             
+	            
+		</LinearLayout>
+			        
+	</ScrollView>
+	 
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

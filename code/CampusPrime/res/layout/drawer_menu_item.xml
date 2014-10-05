@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:background="@drawable/sel_drawer_group_item"
+    android:padding="2dip"
+    android:orientation="horizontal" >
+    <ImageView
+        android:id="@+id/ami_icon"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_marginLeft="40dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/drawer_score"/>
+    <TextView
+        android:id="@+id/ai_application_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dip"
+        android:paddingTop="12dip"
+		android:paddingBottom="12dip"
+		android:paddingRight="12dip"		
+		android:textSize="15sp"
+        android:textColor="#ffffffff"
+        android:gravity="left"/>
+
+</LinearLayout>

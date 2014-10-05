@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.campus.prime.ui.view.DetectRelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:campus="http://schemas.android.com/apk/res/com.campus.prime"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content">
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:paddingBottom = "16dip"
+	    android:orientation="vertical">
+	    
+	<!-- 个人描述 -->              
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/bg_shadow"
+	    android:layout_marginLeft="8.0dip" 
+		android:layout_marginTop="8.0dip" 
+		android:layout_marginRight="8.0dip">
+		<RelativeLayout
+		    android:background="@color/white"
+		    android:paddingBottom="10dp"
+		    android:layout_height="match_parent"
+		    android:layout_width="match_parent">
+		    <TextView
+		        android:id="@+id/label1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="8.0dip"
+		        android:layout_marginBottom="3.0dip"
+		        android:text="个人描述"
+		        android:textSize="16sp"
+		        android:textColor="#19aba2"
+		        android:layout_marginLeft="12.0dip"/>
+		    <TextView
+		        android:id="@+id/ub_description"
+		        android:layout_below="@id/label1"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_marginLeft="12dp"
+		        android:layout_marginRight="18dp"
+				android:textSize="13sp"
+				android:textColor="#808080"/>
+		</RelativeLayout>                
+	</RelativeLayout>
+	        
+		    
+	<!-- 个人信息 姓名 恋爱状态 -->
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/bg_shadow"
+	    android:layout_marginLeft="8.0dip" 
+		android:layout_marginTop="8.0dip" 
+		android:layout_marginRight="8.0dip">
+		<LinearLayout
+			android:id="@+id/ub_generation_label"
+			android:gravity="center_vertical" 
+			android:background="@color/white" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:orientation="vertical">
+		    <TextView	                
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8.0dip"
+				android:layout_marginBottom="8.0dip"
+				android:text="基本信息"
+				android:textSize="16sp"
+				android:textColor="#19aba2"
+				android:layout_marginLeft="8.0dip"/>
+			<View 
+				android:background="#e5e5e5" 
+				android:layout_width="fill_parent" 
+				android:layout_height="1.0px" />		            
+		    <com.campus.prime.ui.view.LabelTextView
+		        android:id="@+id/ub_real_name"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:hint="真实姓名"
+		        campus:LineColor="#e5e5e5"
+		        campus:LabelColor="#ff4c4c4c"
+		        campus:LabelName="真实姓名"
+		        style="@style/LabelText"/>
+		    <com.campus.prime.ui.view.LabelTextView
+		        android:id="@+id/ub_sex"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:hint="性别"
+		        campus:LineColor="#e5e5e5"
+		        campus:LabelColor="#ff4c4c4c"
+		        campus:LabelName="性别"
+		        style="@style/LabelText"/>
+		     <com.campus.prime.ui.view.LabelTextView
+		        android:id="@+id/ub_love_state"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"    
+		        android:hint="恋爱状态"
+		        campus:LineColor="#e5e5e5"
+		        campus:LabelColor="#ff4c4c4c"
+		        campus:LabelName="恋爱状态"
+		        style="@style/LabelText"/>                               
+		</LinearLayout>
+	</LinearLayout>   
+	        
+	<!-- 教育信息 学校 学院 年级 -->       
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/bg_shadow"
+	    android:layout_marginLeft="8.0dip" 
+		android:layout_marginTop="8.0dip" 
+		android:layout_marginRight="8.0dip">
+		<LinearLayout
+			android:id="@+id/ub_generation_label"
+			android:gravity="center_vertical" 
+			android:background="@color/white" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:orientation="vertical">
+			<TextView	                
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8.0dip"
+				android:layout_marginBottom="8.0dip"
+				android:text="教育信息"
+				android:textSize="16sp"
+				android:textColor="#19aba2"
+				android:layout_marginLeft="8.0dip"/>
+			<View 
+				android:background="#e5e5e5" 
+				android:layout_width="fill_parent" 
+				android:layout_height="1.0px" />
+		    <com.campus.prime.ui.view.LabelTextView
+		         android:id="@+id/ub_school"
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:hint="所在学校"
+		         campus:LabelName="学校"
+		         campus:LineColor="#e5e5e5"
+		         campus:LabelColor="#ff4c4c4c"
+		         style="@style/LabelText"/>                    
+		    <com.campus.prime.ui.view.LabelTextView
+		         android:id="@+id/ub_academy"
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:hint="所在学院"
+		         campus:LabelName="学院"
+		         campus:LineColor="#e5e5e5"
+		         campus:LabelColor="#ff4c4c4c"
+		         style="@style/LabelText"/>                    
+		     <com.campus.prime.ui.view.LabelTextView         
+		         android:id="@+id/ub_grade"
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:hint="所在学院"
+		         campus:LabelName="年级"
+		         campus:LineColor="#e5e5e5"
+		         campus:LabelColor="#ff4c4c4c"
+		         style="@style/LabelText"/>                    
+		</LinearLayout>
+	</LinearLayout>
+	
+	
+	        
+	        
+	</LinearLayout>
+</ScrollView>
+
+</com.campus.prime.ui.view.DetectRelativeLayout>

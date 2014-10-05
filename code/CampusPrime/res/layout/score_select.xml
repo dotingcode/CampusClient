@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff2f1ed"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop= "12dip"
+    android:layout_marginLeft="8dip"
+    android:layout_marginRight="8dip"
+    android:background="@drawable/bg_shadow"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingBottom="18dip"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dip"
+        android:paddingBottom="8dip"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:text="选择查询的学年和学期"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="#ffffffff"/>
+</LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2.0dip"
+    android:layout_marginBottom="8dip"
+    android:layout_marginLeft="4dip"
+    android:layout_marginRight="4dip"
+    android:background="#ff19aba2"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dip"
+    android:orientation="horizontal"
+    >
+   <Spinner 
+        android:id="@+id/fss_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dip"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dip"
+    android:orientation="horizontal">
+
+  <Spinner 
+        android:id="@+id/fss_semester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dip"/>
+</LinearLayout>
+
+<Button
+    android:id="@+id/fss_search"
+    android:layout_width="match_parent"
+    android:layout_height="35dip"
+    android:background="@drawable/sel_score_search"
+    android:layout_margin="4dip"  
+    android:text="查询"
+    android:textSize="15sp"/>
+</LinearLayout>   
+</LinearLayout>
+</LinearLayout>
